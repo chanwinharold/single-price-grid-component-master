@@ -1,3 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+}
 
+body {
+  font-size: 1em;
+  font-family: Karla, sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+.container__header {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 15px;
+  border-radius: 10px 10px 0 0;
+  padding: 30px;
+  background-color: white;
+}
+.container__header__title-lv1 {
+  color: hsl(179, 62%, 43%);
+}
+.container__header__title-lv2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 1em;
+}
+.container__header__content {
+  line-height: 1.5em;
+  opacity: 0.5;
+}
+.container__main {
+  display: flex;
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+.container__main__first-block {
+  width: 50%;
+  padding: 30px;
+  border-bottom-left-radius: 10px;
+  background-color: hsla(179, 62%, 43%, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container__main__first-block__title-lv2 {
+  font-size: 1em;
+}
+.container__main__first-block__first-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.container__main__first-block__first-content strong {
+  font-size: 2em;
+  font-weight: 700;
+}
+.container__main__first-block__first-content span {
+  opacity: 0.5;
+}
+.container__main__first-block__link {
+  width: 90%;
+  margin: auto;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: hsl(71, 73%, 54%);
+}
+.container__main__second-block {
+  width: 50%;
+  padding: 30px;
+  border-bottom-right-radius: 10px;
+  background-color: hsla(179, 62%, 43%, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container__main__second-block__title-lv2 {
+  font-size: 1em;
+}
+.container__main__second-block__content {
+  line-height: 1.5em;
+  opacity: 0.8;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 300px;
+  }
+  .container__header {
+    width: auto;
+  }
+  .container__main {
+    flex-direction: column;
+  }
+  .container__main__first-block {
+    width: auto;
+    border-radius: 0;
+  }
+  .container__main__second-block {
+    width: auto;
+    border-radius: 0 0 10px 10px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
